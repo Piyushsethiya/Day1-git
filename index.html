@@ -7,6 +7,7 @@
     <title>REGISTRATION FORM</title>
 </head>
 <body>
+    
     <h1 style="text-align: center;">REGISTRATION FORM</h1>
     <table>
         <tr>
@@ -14,7 +15,7 @@
                 Name:
             </td>
             <td>
-                <input type="name" placeholder = "Enter Your Name" name= "">
+                <input type="name" placeholder = "Enter Your Name" name= "" required>
             </td>
         </tr>
         <tr>
@@ -22,34 +23,41 @@
                 Address:
             </td>
             <td>
-                <input type="address" placeholder="Enter Your Address" >
+                <input type="address" placeholder="Enter Your Address" required>
             </td>
         </tr>
         <tr>
             <td>Gender:</td>
             <td>
-                <input type="radio" name = "gender" >Male
-                <input type="radio" name = "gender" >Female
+                <input type="radio" name = "gender" required>Male
+                <input type="radio" name = "gender" required>Female
             </td>
         </tr>
         <tr>
             <td>Phone Number:</td>
             <td>
-                <input type="number" placeholder="xxxxxxxxxx">
+                <input type="number" placeholder="xxxxxxxxxx"required>
             </td>
         </tr>
         <tr>
             <td>Date of Birth:</td>
             <td>
-                <input type="date" >
+                <input type="date" required>
             </td>
         </tr>
         <tr>
+        <td>Email id.</td>
+        <td>
+            <input type="email" placeholder = "Enter Your Email id." name= "">
+        </td>
+        </tr>
+        <tr>
             <td>
-                <button>Submit</button>
+                <input type="submit" value="Submit">
                 <button>Reset</button>
             </td>
         </tr>
+        
     </table>
 </body>
 </html>
